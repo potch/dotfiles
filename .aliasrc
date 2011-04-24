@@ -1,0 +1,45 @@
+du='du -sh'
+diff='diff -u'
+grep='grep --color=auto'
+rgrep='grep -r --color=auto'
+mk='mkdir -p'
+p=popd
+o=open
+ack='ack --ignore-dir=vendor'
+people='ssh mclaypotch@people.mozilla.org'
+khan='ssh mclaypotch@khan.mozilla.org'
+
+django='python manage.py'
+gozamboni='python manage.py runserver 127.0.0.1:8000'
+t='django test --noinput --logging-clear-handlers'
+whatchanged='git diff --name-only master'
+upvendor='pushd vendor && git pull && git submodule update --init && popd'
+stashpull='git stash && git pull && git stash pop'
+cmsql='mysql -h cm-webdev01-master01.mozilla.org -uroot remora'
+alias js="java -cp lib/js.jar:lib/jline.jar jline.ConsoleRunner org.mozilla.javascript.tools.shell.Main -opt -1 "
+zcommits="open http://github.com/jbalogh/zamboni/commits/master"
+serve='python -m SimpleHTTPServer'
+
+# ls
+l='ls -lh'
+l='ls -lh'
+ll='ls -lh'
+la='ls -A'
+lla='la -lhA'
+
+# git
+g=git
+gd='git diff'
+gs='git status'
+gci='git commit'
+gl='git log'
+glp='git log -p'
+gv='git svn'
+gr='git rebase'
+gb='git branch'
+
+# Python
+py=python
+
+khan='ssh mclaypotch@khan.mozilla.org'
+

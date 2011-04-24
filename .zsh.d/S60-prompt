@@ -1,0 +1,12 @@
+export PS1="%m:%~%# "
+
+get_prompt() {
+    if [[ -n $(get_git_prompt_info) ]]; then
+        echo "(%{$fg_bold[green]%}$(get_git_prompt_info)%{$reset_color%})"
+    else
+        echo " "
+    fi
+}
+RPROMPT='$(get_prompt)'
+
+setopt CORRECT
